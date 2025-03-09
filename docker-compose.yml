@@ -17,6 +17,9 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+    build:
+      context: .
+      dockerfile: Dockerfile
 
   webserver:
     image: nginx:1.27.2
